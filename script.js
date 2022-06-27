@@ -125,7 +125,7 @@ function startTimer() {
    if(ds > 60 )
    {
   
-   	totalTime.textContent = `Today : ${fg == 0  ?  '1': fg } : ${ds > 60  ? ds % 100 :   kl} min`;
+   	totalTime.textContent = `Today : ${fg == 0 && kl > 60 ?  '1' : fg } : ${ds > 60  ? ds % 100 :   kl} min`;
 
    	
    	}
