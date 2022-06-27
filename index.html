@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer</title>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="timer">
+    <div class="timer__controls">
+      <button data-time="20" class="timer__button">20 Secs</button>
+      <button data-time="300" class="timer__button">Work 5</button>
+      <button data-time="900" class="timer__button">Quick 15</button>
+      <button data-time="1200" class="timer__button">Snack 20</button>
+      <button data-time="3600" class="timer__button">Lunch Break</button>
+      <form name="customForm" id="custom">
+        <input type="text" name="minutes" placeholder="Enter Minutes">
+      </form>
+
+    </div>
+   
+    <div class="display">
+      <h2 class="display__time-left"></h2>
+      <p class="display__end-time"></p>
+      <p class="display_total"></p>
+       <button class = "display__button-pause hidden" style="margin-top: 200px;margin-left: 10px;margin-right: 120px;position: absolute">Pause</button>
+       <button class = "display__button-start hidden"style="margin-top: 200px;margin-left: 125px;margin-right: 120px;position: absolute;">Start</button>
+          <button class = "display__button-reset hidden" style="margin-top: 200px;margin-left: 230px;
+          margin-right: 120px;position: absolute">Reset</button>
+           <div class="wrapper">
+    <h2 style = "color: white;">To Do List</h2>
+    <p></p>
+    <ul class="taskes">
+      <li>Loading task...</li>
+    </ul>
+    <form class="add-items">
+      <input type="text" name = "ite" placeholder="Task Name" required>
+      <input type="submit" style = "margin-top: 5px;"value="+ Add Task">
+    </form>
+
+  </div>
+        
+     
+    </div>
+
+
+
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
